@@ -9,7 +9,7 @@ from homeassistant.const import (
     LENGTH_KILOMETERS,
     SPEED_MILES_PER_HOUR,
     TEMP_CELSIUS,
-    UNIT_PERCENTAGE,
+    PERCENTAGE,
     UV_INDEX,
 )
 from homeassistant.core import callback
@@ -77,11 +77,11 @@ SENSOR_TYPES = {
     "precipitation": [
         "Probability of Precipitation",
         None,
-        UNIT_PERCENTAGE,
+        PERCENTAGE,
         "mdi:weather-rainy",
         True,
     ],
-    "humidity": ["Humidity", DEVICE_CLASS_HUMIDITY, UNIT_PERCENTAGE, None, False],
+    "humidity": ["Humidity", DEVICE_CLASS_HUMIDITY, PERCENTAGE, None, False],
 }
 
 
